@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperCool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_BUCO" translatesAutoresizingMaskIntoConstraints="NO" id="iHh-bp-pYB">
+                                <rect key="frame" x="-41" y="-22" width="512" height="712"/>
+                                <animations/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_CICA" translatesAutoresizingMaskIntoConstraints="NO" id="byx-eh-xxa">
+                                <rect key="frame" x="-127" y="-117" width="551" height="846"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSi-zD-nkf">
+                                <rect key="frame" x="0.0" y="431" width="375" height="93"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="Okos cicát mutass!">
+                                    <color key="titleColor" red="0.88125818062827221" green="0.19223090761068887" blue="0.48460400998557263" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeMISKA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lFK-Vx-Ycc"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BooM-BUCO" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-xq-HrP">
+                                <rect key="frame" x="0.0" y="217" width="375" height="111"/>
+                                <animations/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BooM-MISKA" translatesAutoresizingMaskIntoConstraints="NO" id="wOw-pm-gdu">
+                                <rect key="frame" x="0.0" y="212" width="375" height="121"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiX-8Q-OWQ">
+                                <rect key="frame" x="0.0" y="363" width="375" height="70"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="Okos legut mutass!">
+                                    <color key="titleColor" red="0.88125818062827221" green="0.19223090761068887" blue="0.48460400998557263" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeBUCO:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QQ2-Cl-Udx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="BUCObg" destination="iHh-bp-pYB" id="nzD-3K-xHk"/>
+                        <outlet property="BUCObut" destination="RiX-8Q-OWQ" id="zpS-se-TCS"/>
+                        <outlet property="BUCOlogo" destination="TAP-xq-HrP" id="xwU-Gz-DCe"/>
+                        <outlet property="MISKAbg" destination="byx-eh-xxa" id="anM-TT-mti"/>
+                        <outlet property="MISKAbut" destination="VSi-zD-nkf" id="Ehv-z0-71e"/>
+                        <outlet property="MISKAlogo" destination="wOw-pm-gdu" id="eS2-Fv-Lts"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324.5" y="387.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BooM-BUCO" width="558" height="94"/>
+        <image name="BooM-MISKA" width="588" height="94"/>
+        <image name="bg_BUCO" width="750" height="1000"/>
+        <image name="bg_CICA" width="750" height="1000"/>
+    </resources>
+</document>
